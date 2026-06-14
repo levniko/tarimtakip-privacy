@@ -5,116 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarım Takip - Gizlilik Politikası</title>
     <style>
+        :root {
+            --ink: #0f2e1a;
+            --emerald: #16a34a;
+            --muted: #5b7361;
+            --tint: #f0fdf4;
+            --border: #d7e8dc;
+        }
+        * { box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+            line-height: 1.65;
+            max-width: 820px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            padding: 28px 22px 60px;
+            color: #2b3a30;
+            background: #ffffff;
         }
         h1 {
-            color: #2c5f2d;
-            border-bottom: 3px solid #4a9b4d;
-            padding-bottom: 10px;
+            color: var(--ink);
+            border-bottom: 3px solid var(--emerald);
+            padding-bottom: 12px;
+            font-size: 28px;
         }
         h2 {
-            color: #2c5f2d;
-            margin-top: 30px;
+            color: var(--ink);
+            margin-top: 34px;
+            font-size: 20px;
         }
         h3 {
-            color: #4a9b4d;
-            margin-top: 20px;
+            color: var(--emerald);
+            margin-top: 22px;
+            font-size: 16px;
         }
-        .update-date {
-            color: #666;
-            font-style: italic;
-        }
+        .update-date { color: var(--muted); font-style: italic; }
         .contact {
-            background-color: #f0f7f0;
-            padding: 15px;
-            border-left: 4px solid #4a9b4d;
-            margin-top: 30px;
+            background: var(--tint);
+            padding: 16px 18px;
+            border-left: 4px solid var(--emerald);
+            border-radius: 8px;
+            margin-top: 34px;
         }
-        ul {
-            margin: 10px 0;
-        }
-        li {
-            margin: 5px 0;
-        }
+        table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+        th, td { border: 1px solid var(--border); padding: 9px 12px; text-align: left; vertical-align: top; font-size: 15px; }
+        th { background: var(--tint); color: var(--ink); }
+        ul { margin: 10px 0; }
+        li { margin: 6px 0; }
+        a { color: var(--emerald); }
+        code { background: #eef2ee; padding: 1px 6px; border-radius: 5px; font-size: 14px; }
     </style>
 </head>
 <body>
-    <h1>GİZLİLİK POLİTİKASI</h1>
-    <p class="update-date"><strong>Son Güncellenme:</strong> 5 Kasım 2025</p>
+    <h1>Gizlilik Politikası</h1>
+    <p class="update-date"><strong>Son Güncellenme:</strong> 14 Haziran 2026</p>
 
     <h2>1. Giriş</h2>
-    <p>Tarım Takip uygulaması, çiftçilerin tarım faaliyetlerini takip etmelerine yardımcı olan bir mobil uygulamadır. Bu gizlilik politikası, uygulamanın kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar.</p>
+    <p><strong>Tarım Takip</strong>, çiftçilerin arazilerini, sezonlarını ve tarımsal masraflarını takip etmesine yardımcı olan bir mobil uygulamadır. Bu gizlilik politikası; uygulamanın hangi kişisel verileri topladığını, bu verileri nasıl kullandığını, kimlerle paylaştığını ve haklarınızı açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş olursunuz. Veriler 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında işlenir.</p>
 
-    <h2>2. Toplanan Bilgiler</h2>
-    <p>Uygulamamız aşağıdaki bilgileri toplar:</p>
+    <h2>2. Topladığımız Veriler</h2>
 
-    <h3>2.1 Konum Bilgisi</h3>
+    <h3>2.1 Hesap ve Profil Bilgileri</h3>
     <ul>
-        <li>Tarla ve arazi konumlarınızı kaydetmek için cihazınızın GPS verilerini kullanırız</li>
-        <li>Bu veriler yalnızca harita üzerinde işaretleme yapmak için kullanılır</li>
+        <li>Ad, soyad ve doğum tarihi</li>
+        <li>E-posta adresi ve telefon numarası</li>
+        <li>Hesap güvenliği için şifreniz (şifrelenmiş/karma olarak saklanır, asla düz metin tutulmaz)</li>
     </ul>
 
-    <h3>2.2 Fotoğraflar ve Medya</h3>
+    <h3>2.2 Tarımsal Kayıtlar</h3>
     <ul>
-        <li>Tarla fotoğrafları çekmek için kamera iznine ihtiyaç duyarız</li>
-        <li>Çekilen fotoğraflar yalnızca cihazınızda ve sunucularımızda saklanır</li>
-        <li>Galeri erişimi, mevcut fotoğrafları yükleyebilmeniz içindir</li>
+        <li>Arazi bilgileri ve harita üzerindeki sınır koordinatları</li>
+        <li>Sezon, faaliyet, gider, stok ve cari hesap kayıtları ile notlarınız</li>
     </ul>
 
-    <h3>2.3 Hesap Bilgileri</h3>
+    <h3>2.3 Konum Bilgisi</h3>
     <ul>
-        <li>E-posta adresi, telefon numarası gibi kayıt bilgileri</li>
-        <li>Tarımsal faaliyet kayıtları ve notlar</li>
+        <li>Arazilerinizi haritada göstermek ve haritayı konumunuza ortalamak için cihazınızın konumunu (yalnızca uygulamayı kullanırken) kullanırız.</li>
+        <li>Konumunuz <strong>arka planda takip edilmez.</strong></li>
     </ul>
 
-    <h2>3. Verilerin Kullanımı</h2>
-    <p>Toplanan veriler şu amaçlarla kullanılır:</p>
+    <h3>2.4 Fotoğraf ve Kamera</h3>
     <ul>
-        <li>Tarım faaliyetlerinizi kaydetmek ve takip etmek</li>
-        <li>Hava durumu uyarıları göndermek</li>
-        <li>Uygulama deneyiminizi iyileştirmek</li>
-        <li>Teknik destek sağlamak</li>
+        <li>Kamera, arazi/fatura/etiket fotoğrafı çekmeniz içindir.</li>
+        <li>Galeri erişimi, yalnızca seçtiğiniz mevcut fotoğrafı yüklemeniz içindir.</li>
+        <li>Yalnızca sizin eklediğiniz fotoğraflara erişiriz; tüm galeriniz taranmaz.</li>
     </ul>
 
-    <h2>4. Veri Paylaşımı</h2>
+    <h3>2.5 Bildirim ve Teknik Veriler</h3>
     <ul>
-        <li>Kişisel verileriniz <strong>üçüncü şahıslarla paylaşılmaz</strong></li>
-        <li>Verileriniz yalnızca yasal zorunluluklar durumunda paylaşılabilir</li>
+        <li>Bildirim gönderebilmek için cihaz bildirim kimliği (Firebase Cloud Messaging token'ı).</li>
+        <li>Uygulamanın kararlılığını artırmak için anonim hata/çökme tanılama verileri toplanabilir.</li>
     </ul>
 
-    <h2>5. Veri Güvenliği</h2>
+    <h2>3. Verileri Kullanma Amaçlarımız</h2>
     <ul>
-        <li>Tüm veriler şifreli olarak saklanır</li>
-        <li>Sunucularımız güvenli protokollerle korunur</li>
-        <li>Düzenli güvenlik güncellemeleri yapılır</li>
+        <li>Tarımsal faaliyetlerinizi, masraflarınızı ve sezonlarınızı kaydetmek ve raporlamak</li>
+        <li>Arazilerinizi harita üzerinde göstermek</li>
+        <li>Hava durumu bilgisi ve bildirim/uyarı sağlamak</li>
+        <li>Hesabınızı oluşturmak, oturum açmanızı ve güvenliği sağlamak</li>
+        <li>Teknik destek vermek ve uygulamayı iyileştirmek</li>
     </ul>
 
-    <h2>6. İzinler</h2>
-    <p>Uygulamamız aşağıdaki izinleri kullanır:</p>
+    <h2>4. Uygulama İzinleri</h2>
+    <p>Uygulama yalnızca aşağıdaki izinleri ister:</p>
+    <table>
+        <tr><th>İzin</th><th>Amaç</th></tr>
+        <tr><td>Konum</td><td>Arazileri haritada göstermek (yalnızca kullanım sırasında)</td></tr>
+        <tr><td>Kamera</td><td>Arazi/fatura fotoğrafı çekmek</td></tr>
+        <tr><td>Fotoğraflar (Galeri)</td><td>Mevcut fotoğrafı yüklemek</td></tr>
+        <tr><td>Bildirimler</td><td>Hava ve faaliyet uyarıları göndermek</td></tr>
+        <tr><td>İnternet</td><td>Senkronizasyon ve hava durumu</td></tr>
+    </table>
+    <p>Uygulama <strong>mikrofon, kişiler, takvim, arka plan konumu</strong> veya geniş depolama/medya erişimi kullanmaz.</p>
+
+    <h2>5. Veri Paylaşımı ve Üçüncü Taraflar</h2>
+    <p>Kişisel verilerinizi reklam veya pazarlama amacıyla <strong>satmayız ve üçüncü şahıslarla paylaşmayız.</strong> Hizmeti sağlamak için yalnızca şu hizmet sağlayıcılarla teknik veri paylaşılır:</p>
     <ul>
-        <li><strong>Konum:</strong> Tarla konumlarını kaydetmek için</li>
-        <li><strong>Kamera:</strong> Tarla fotoğrafları çekmek için</li>
-        <li><strong>Depolama:</strong> Fotoğrafları kaydetmek için</li>
-        <li><strong>Mikrofon:</strong> Kamera ile video kaydı için (opsiyonel)</li>
-        <li><strong>İnternet:</strong> Hava durumu ve senkronizasyon için</li>
+        <li><strong>Google Firebase Cloud Messaging</strong> — push bildirimleri için cihaz bildirim kimliği.</li>
+        <li><strong>Hava durumu servisleri</strong> (ör. MGM / OpenWeather) — hava durumunu getirmek için konum koordinatları.</li>
+        <li><strong>Sunucu barındırma sağlayıcımız</strong> — verilerin güvenli şekilde saklanması için.</li>
+    </ul>
+    <p>Veriler yalnızca yasal yükümlülük halinde yetkili mercilerle paylaşılabilir.</p>
+
+    <h2>6. Veri Güvenliği ve Saklama</h2>
+    <ul>
+        <li>Veriler güvenli (şifreli) bağlantılar üzerinden iletilir ve sunucularımızda korunur.</li>
+        <li>Şifreler tek yönlü karma (hash) ile saklanır.</li>
+        <li>Verileriniz, hesabınız aktif olduğu sürece ve hizmetin gerektirdiği kadar saklanır.</li>
     </ul>
 
-    <h2>7. Çocukların Gizliliği</h2>
-    <p>Uygulamamız 13 yaş altı çocuklara yönelik değildir. Bilerek 13 yaş altı çocuklardan veri toplamayız.</p>
+    <h2>7. Haklarınız ve Hesap Silme (KVKK)</h2>
+    <p>KVKK kapsamında; verilerinize erişme, düzeltilmesini veya silinmesini isteme ve işlemeye itiraz etme hakkına sahipsiniz.</p>
+    <ul>
+        <li>Uygulama içinden <strong>Hesabım → Hesabı Sil</strong> ile hesabınızı ve ilişkili verilerinizi kalıcı olarak silebilirsiniz.</li>
+        <li>Profil bilgilerinizi <strong>Hesabım → Kişisel Bilgiler</strong> üzerinden güncelleyebilirsiniz.</li>
+        <li>Talepleriniz için aşağıdaki e-posta ile de bize ulaşabilirsiniz.</li>
+    </ul>
 
-    <h2>8. Değişiklikler</h2>
-    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinde bildirilecektir.</p>
+    <h2>8. Çocukların Gizliliği</h2>
+    <p>Uygulamamız 13 yaş altı çocuklara yönelik değildir ve bilerek 13 yaş altı çocuklardan veri toplamayız.</p>
 
-    <h2>9. İletişim</h2>
+    <h2>9. Değişiklikler</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler bu sayfada yayımlanır ve "Son Güncellenme" tarihi değiştirilir.</p>
+
+    <h2>10. İletişim</h2>
     <div class="contact">
-        <p>Gizlilik politikası ile ilgili sorularınız için:</p>
-        <p><strong>E-posta:</strong> ralpatine115@gmail.com</p>
+        <p>Gizlilik ve verilerinizle ilgili sorularınız için:</p>
+        <p><strong>E-posta:</strong> <a href="mailto:ralpatine115@gmail.com">ralpatine115@gmail.com</a></p>
     </div>
 </body>
 </html>
