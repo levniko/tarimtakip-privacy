@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TarımTakip - Hesap ve Veri Silme</title>
+    <style>
+        :root {
+            --ink: #0f2e1a;
+            --emerald: #16a34a;
+            --muted: #5b7361;
+            --tint: #f0fdf4;
+            --border: #d7e8dc;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+            line-height: 1.65;
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 28px 22px 60px;
+            color: #2b3a30;
+            background: #ffffff;
+        }
+        h1 {
+            color: var(--ink);
+            border-bottom: 3px solid var(--emerald);
+            padding-bottom: 12px;
+            font-size: 28px;
+        }
+        h2 { color: var(--ink); margin-top: 34px; font-size: 20px; }
+        h3 { color: var(--emerald); margin-top: 22px; font-size: 16px; }
+        .update-date { color: var(--muted); font-style: italic; }
+        .steps { background: var(--tint); border: 1px solid var(--border); border-radius: 10px; padding: 8px 22px; }
+        .contact {
+            background: var(--tint);
+            padding: 16px 18px;
+            border-left: 4px solid var(--emerald);
+            border-radius: 8px;
+            margin-top: 34px;
+        }
+        table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+        th, td { border: 1px solid var(--border); padding: 9px 12px; text-align: left; vertical-align: top; font-size: 15px; }
+        th { background: var(--tint); color: var(--ink); }
+        ul, ol { margin: 10px 0; }
+        li { margin: 6px 0; }
+        a { color: var(--emerald); }
+    </style>
+</head>
+<body>
+    <h1>Hesap ve Veri Silme</h1>
+    <p class="update-date"><strong>Uygulama:</strong> TarımTakip &nbsp;·&nbsp; <strong>Son Güncellenme:</strong> 18 Haziran 2026</p>
+
+    <p><strong>TarımTakip</strong>, çiftçilerin arazilerini, sezonlarını ve tarımsal masraflarını takip etmesine yardımcı olan bir mobil uygulamadır. Bu sayfa, <strong>TarımTakip</strong> hesabınızı ve ilişkili verilerinizi nasıl sileceğinizi; hangi verilerin silindiğini, hangilerinin ne kadar süre saklandığını açıklar.</p>
+
+    <h2>Yöntem 1 — Uygulama içinden (anında)</h2>
+    <div class="steps">
+        <ol>
+            <li><strong>TarımTakip</strong> uygulamasını açın ve hesabınıza giriş yapın.</li>
+            <li>Alttaki menüden <strong>Hesabım</strong> sekmesine gidin.</li>
+            <li>Sayfanın altındaki <strong>Hesabı Sil</strong> butonuna dokunun.</li>
+            <li>Açılan pencerede <strong>şifrenizi girin</strong> ve <strong>Hesabı Sil</strong>'e dokunarak onaylayın.</li>
+            <li>Hesabınız ve tüm ilişkili verileriniz <strong>anında ve kalıcı olarak</strong> silinir. Bu işlem geri alınamaz.</li>
+        </ol>
+    </div>
+
+    <h2>Yöntem 2 — E-posta ile talep</h2>
+    <p>Uygulamaya erişemiyorsanız, hesabınızı oluşturduğunuz e-posta adresinden <a href="mailto:ralpatine115@gmail.com?subject=Hesap%20Silme%20Talebi">ralpatine115@gmail.com</a> adresine <strong>"Hesap Silme Talebi"</strong> konulu bir e-posta gönderin. Kimliğiniz doğrulandıktan sonra talebiniz <strong>en geç 30 gün içinde</strong> işleme alınır ve hesabınız ile verileriniz silinir.</p>
+
+    <h2>Silinen Veriler</h2>
+    <p>Hesabınızı sildiğinizde aşağıdaki verilerin tamamı sunucularımızdan <strong>kalıcı olarak silinir</strong>:</p>
+    <ul>
+        <li>Hesap ve profil bilgileri (ad, soyad, e-posta, telefon, doğum tarihi, şifre)</li>
+        <li>Arazi kayıtları ve harita sınır koordinatları</li>
+        <li>Sezon, faaliyet, gider, stok ve cari hesap kayıtları</li>
+        <li>Notlar ve eklediğiniz fotoğraflar</li>
+        <li>Bildirim için kayıtlı cihaz kimliği (FCM token)</li>
+    </ul>
+
+    <h2>Saklanan Veriler ve Süreler</h2>
+    <table>
+        <tr><th>Veri türü</th><th>Saklama süresi</th></tr>
+        <tr><td>Hesap ve tüm tarımsal/kişisel kayıtlar</td><td>Silme onayıyla birlikte <strong>derhal silinir</strong></td></tr>
+        <tr><td>Şifreli sistem yedekleri (geçici)</td><td>Yedekleme döngüsü gereği <strong>en fazla 30 gün</strong> tutulabilir, ardından kalıcı olarak silinir</td></tr>
+        <tr><td>Kimliğinizle ilişkilendirilmeyen anonim/takma adlı çökme ve kullanım tanılama verileri (Sentry, PostHog)</td><td>İlgili servis sağlayıcının saklama süresi boyunca (yaklaşık <strong>90 gün</strong>) tutulabilir; satılmaz veya reklam amacıyla paylaşılmaz</td></tr>
+        <tr><td>Yasal yükümlülük gerektiren sınırlı kayıtlar (varsa)</td><td>Yalnızca yürürlükteki mevzuatın öngördüğü süre boyunca tutulur</td></tr>
+    </table>
+
+    <p>Daha fazla bilgi için <a href="index.html">Gizlilik Politikamızı</a> inceleyebilirsiniz.</p>
+
+    <div class="contact">
+        <p>Hesap ve veri silme talepleriniz için:</p>
+        <p><strong>Uygulama:</strong> TarımTakip<br>
+        <strong>E-posta:</strong> <a href="mailto:ralpatine115@gmail.com?subject=Hesap%20Silme%20Talebi">ralpatine115@gmail.com</a></p>
+    </div>
+</body>
+</html>
